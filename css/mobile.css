@@ -1,0 +1,772 @@
+/*
+Document   : default
+Created on : 2013-04-23, 12:18:06
+Author     : Andrzej
+Description:
+Purpose of the stylesheet follows.
+*/
+
+/*
+układ strony
+*/
+
+#container
+{
+	width: 1024px;
+	margin: auto;
+}
+#header, #center, #footer
+{
+	margin: 5px;
+}
+#menu
+{
+	float: left;
+	width: 0%;
+	padding: 0px;
+	vertical-align: top;
+}
+#content
+{
+	float: right;
+	width: 100%;
+	padding: 0px;
+	vertical-align: top;
+}
+#project
+{
+	margin: 2px;
+	text-align: center;
+	font-size: small;
+	color: #000;
+}
+#slogan
+{
+	margin: 5px;
+	text-align: center;
+	font-size: medium;
+	font-weight: bold;
+	color: #000;
+}
+
+html
+{
+	background-color: #fdfeff;
+	font-family: sans-serif;
+	font-size: xx-large;
+	line-height: 1.5em;
+	color: #000;
+}
+
+body
+{
+	margin: 5px;
+	font-size: xx-large;
+	line-height: 1.5em;
+}
+
+/*
+elementy strony
+*/
+
+h1, h2, h3, h4, h5, h6
+{
+	font-size: xx-large;
+	font-weight: bold;
+	line-height: 1.5em;
+}
+
+ul
+{
+	line-height: 2.0em;
+}
+ol
+{
+	line-height: 2.0em;
+}
+li
+{
+	line-height: 1.5em;
+	margin-top: 4px;
+	margin-bottom: 4px;
+}
+
+a
+{
+	font-size: xx-large;
+	line-height: 1.5em;
+	color: #6060a0;
+	text-decoration: none;
+}
+
+a:hover
+{
+	text-decoration: underline;
+}
+
+a.Disabled 
+{
+	color: #999;
+}
+
+div.PageHeader
+{
+	text-align: center;
+	padding-top: 2px;
+}
+
+div.PageMenu
+{
+	padding: 5px;
+	text-align: left;
+}
+
+div.PageContent
+{
+	padding: 5px;
+	text-align: left;
+	line-height: 1.5em;
+}
+
+div.PageFooter
+{
+	text-align: center;
+}
+
+div.PageLinks
+{
+	color: #309030;
+	text-align: right;
+	line-height: 1.5em;
+}
+
+div.PagePath
+{
+	padding: 5px;
+	text-align: left;
+}
+
+.TopLinkItem
+{
+	padding-left: 20px;
+}
+
+.TopLinkIcon
+{
+	vertical-align: middle;
+	border: 0px solid #fff;
+	padding-left: 0px;
+	padding-right: 5px;
+	padding-top: 0px;
+	padding-bottom: 2px;
+}
+
+a.PathLink
+{
+	color: #6060a0;
+	text-decoration: none;
+}
+
+a.PathLink:hover
+{
+	color: #f00000;
+	text-decoration: underline;
+}
+
+.PathItem
+{
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.UserItem
+{
+	float: left;
+}
+
+.Logo
+{
+	border: 1px solid #CFCFCF;
+}
+
+.WindowHeader 
+{
+	line-height: 2.0em;
+	font-size: xx-large;
+	font-weight: bold;
+	text-align: left;
+	vertical-align: middle;
+	border-bottom: 1px solid #369;
+	color: #369;
+	margin-bottom: 20px;
+}
+
+.MenuIco
+{
+	vertical-align: top;
+	padding-left: 1px;
+	padding-right: 2px;
+}
+
+.MenuItem
+{
+	vertical-align: top;
+	padding-left: 2px;
+	padding-right: 1px;
+	padding-bottom: 10px;
+}
+
+.MenuItemSelected
+{
+	color: #c00;
+}
+
+.FormPanel
+{
+	text-align: left;
+	vertical-align: middle;
+	font-size: large;
+	color: #303030;
+}
+
+.MenuLink
+{
+	color: #6060a0;
+	text-decoration: none;
+}
+
+.MenuLink:hover
+{
+	text-decoration: underline;
+}
+
+.DataLink
+{
+	padding: 1px;
+	line-height: 1.5em;
+}
+
+.FormLinkSeparated
+{
+	font-size: large;
+}
+
+.Table
+{
+	border: 1px solid #C0D0E0;
+	font-size: large;
+	padding: 5px;
+	color: #303030;
+	background-color: #f9f9f9;
+}
+
+.FormTitleBar
+{
+	border-bottom: 1px dotted #ABC;
+	text-align: left;
+	padding-bottom: 7px;
+}
+
+.FormIcon
+{
+	padding-right: 15px;
+}
+
+.FormTitle
+{
+	font-size: large;
+	font-weight: bold;
+	color: #369;
+	line-height: 2.0em;
+	vertical-align: top;
+}
+
+.TitleCell
+{
+	border-bottom: 1px solid #90B0D0;
+	font-size: large;
+	text-align: left;
+	vertical-align: middle;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	color: #369;
+}
+
+.DataCell
+{
+	border-bottom: 1px dotted #C0D0E0;
+	line-height: 1.5em;
+	font-size: large;
+	text-align: left;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	color: #000;
+}
+
+.DataLock
+{
+	border-bottom: 1px dotted #C0D0E0;
+	line-height: 1.5em;
+	font-size: large;
+	text-align: left;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	color: #c00;
+}
+
+.DataCellMsg
+{
+	line-height: 1.5em;
+	font-size: large;
+	text-align: center;
+	padding: 10px;
+	color: #c00;
+}
+
+.DataRowBright
+{
+	background-color: inherit;	
+}
+
+.DataRowDark
+{
+	background-color: inherit;
+}
+
+.DataRowBright:hover
+{
+	background-color: #f7f8f9;
+}
+
+.DataRowDark:hover
+{
+	background-color: #f7f8f9;
+}
+
+.DetailsCell
+{
+	border-bottom: 1px dotted #C0D0E0;
+	font-size: large;
+	text-align: left;
+	padding: 5px;
+	color: #00f;
+}
+
+.FormInput
+{
+	font-size: medium;
+	font-family: sans-serif;
+	border: 1px solid #999;
+	background-color: #fff;
+	padding: 2px;
+}
+
+.FormComboBox
+{
+	font-size: medium;
+	border: 1px solid #999;
+	background-color: #fff;
+	padding: 2px;
+}
+
+.ButtonBar
+{
+	padding-top: 15px;
+	padding-bottom: 5px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.Message
+{
+	text-align: center; 
+}
+
+.MessageBoxError
+{
+	border: 1px solid #ff0000;
+	background-color: #fdd7cd;
+	vertical-align: middle;
+}
+
+.MessageBoxWarning
+{
+	border: 1px solid #00bb00;
+	background-color: #ffffcc;
+	vertical-align: middle;
+}
+
+.MessageBoxInformation
+{
+	border: 1px solid #0000ff;
+	background-color: #ddeeff;
+	vertical-align: middle;
+}
+
+.MessageBoxQuestion
+{
+	border: 1px solid #eeee00;
+	background-color: #ffffdd;
+	vertical-align: middle;
+}
+
+.MsgIcon
+{
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	vertical-align: middle;
+}
+
+.MsgMessage
+{
+	padding-left: 20px;
+	padding-right: 10px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	line-height: 1.5em;
+	font-size: medium;
+	color: #000090;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.SortIcon
+{
+	vertical-align: middle;
+	padding-bottom: 3px;
+}
+
+.NaviBar
+{
+	text-align: center;
+	padding: 10px;
+}
+
+.NaviPointersLeft
+{
+	font-size: small;
+	text-align: right;
+	vertical-align: middle;
+}
+
+.NaviPointers
+{
+	font-size: small;
+	padding: 10px;
+	vertical-align: middle;
+}
+
+.NaviPointersRight
+{
+	font-size: small;
+	text-align: left;
+	vertical-align: middle;
+}
+
+.PagePointer
+{
+	border: 1px solid #ccc;
+	color: #369;
+	padding: 5px;
+	text-align: center;
+}
+
+.PagePointerCurrent
+{
+	border: 1px solid #036;
+	color: #fff;
+	background-color: #369;
+	padding: 5px;
+	text-align: center;
+}
+
+.PagePointerDisabled
+{
+	border: 1px solid #ccc;
+	color: #ccc;
+	padding: 5px;
+	text-align: center;
+}
+
+.PagePointer:hover
+{
+	color: #fff;
+	background-color: #369;
+	text-decoration: none;
+}
+
+.PagePointerCurrent:hover
+{
+	text-decoration: none;
+}
+
+.PagePointerDisabled:hover
+{
+	text-decoration: none;
+}
+
+.FormGoToPage
+{
+}
+
+.PageInput
+{
+	border: 1px solid #999;
+	background-color: #fff;
+	color: #000;
+	text-align: center;
+	width: 40px;
+	font-size: small;
+}
+
+.PageGo
+{
+	width: 40px;
+	font-size: small;
+}
+
+.ActionIcon
+{
+	margin: 1px;
+	border: 0px dotted #fff;
+}
+
+.MessageError
+{
+	padding: 15px;
+	text-align: left;
+	vertical-align: middle;
+	font-size: medium;
+	border: 1px solid #C0D0E0;
+	color: #c00;
+	background-color: #ffeedd;
+}
+
+.MessageWarning
+{
+	padding: 15px;
+	text-align: left;
+	vertical-align: middle;
+	font-size: medium;
+	border: 1px solid #C0D0E0;
+	color: #d63;
+	background-color: #ffeebb;
+}
+
+.MessageInformation
+{
+	padding: 15px;
+	text-align: left;
+	vertical-align: middle;
+	font-size: medium;
+	border: 1px solid #C0D0E0;
+	color: #00c;
+	background-color: #f0f9ff;
+}
+
+.MessageQuestion
+{
+	padding: 15px;
+	text-align: left;
+	vertical-align: middle;
+	font-size: medium;
+	border: 1px solid #C0D0E0;
+	color: #c90;
+	background-color: #fff8f0;
+}
+
+.MessageTitle
+{
+	border-bottom: 1px solid #C0D0E0;
+	padding-bottom: 5px;
+	font-size: large;
+	line-height: 2.0em;
+	text-align: center;
+}
+
+.MessageIcon
+{
+	padding-right: 15px;
+}
+
+.MessageText
+{
+	line-height: 1.5em;
+	text-align: left;
+	color: #369;
+}
+
+.MessageSeparator
+{
+	border-bottom: 1px dotted #C0D0E0;
+}
+
+.Footer 
+{
+	line-height: 1.0em;
+	font-size: small;
+	text-align: center;
+	vertical-align: middle;
+	color: #666;
+	background-color: #eee;
+	border: 1px solid #ccc;
+	padding: 10px;
+	margin-top: 20px;
+}
+
+.Separator
+{
+	padding: 10px;
+}
+
+.Stats
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: smaller;
+	color: #666;
+}
+
+ul.IpList
+{
+	margin: 0px;
+	padding-left: 20px;
+}
+
+li.IpItem
+{
+	margin: 0px;
+	line-height: 12px;
+}
+
+.PanelItem
+{
+	padding: 20px;
+	text-align: center;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: medium;
+	line-height: 1.5em;
+}
+
+.ItemEnabled
+{
+	color: #666;
+}
+
+.ItemDisabled
+{
+	color: #999;
+}
+
+a.PanelLink
+{
+	color: #666;
+}
+
+.PageSignature
+{
+	font-size: small; 
+	color: #666; 
+	text-align: left;
+}
+
+.DocumentLink
+{
+	font-size: large; 
+}
+
+.PageText
+{
+	color: #369; 
+	font-size: xx-large; 
+	text-align: left;
+}
+
+.Products
+{
+	color: #369; 
+	font-size: medium; 
+	text-align: center;
+}
+
+.Back
+{
+	text-align: right; 
+	font-size: x-large;
+	margin-right: 50px;
+}
+
+.BackLink
+{
+	color: #090;
+}
+
+.BackImage
+{
+	vertical-align: middle; 
+	border: 0px solid #fff;
+}
+
+.ItemIcon
+{
+	vertical-align: middle;
+	border: 0px solid #fff;
+	padding: 10px;
+}
+
+.ItemProduct
+{
+	vertical-align: middle;
+	border: 1px solid #ccc;
+	padding: 0px;
+	width: 400px;
+}
+
+.ItemProductSmall
+{
+	vertical-align: middle;
+	border: 1px solid #ccc;
+	padding: 0px;
+	width: 100px;
+	height: 100px;
+}
+
+.IndexItem
+{
+	/*
+	text-decoration: underline;
+	*/
+	line-height: 1.5em;
+}
+
+.BackToIndex
+{
+	text-align: right; 
+	font-weight: bold;
+}
+
+.Description
+{
+	text-align: justify;
+	color: #000;
+	line-height: 1.5em;
+}
+
+.Graphics
+{
+	vertical-align: middle;
+	border: 1px solid #ccc;
+	padding: 0px;
+}
+
+.FooterLink
+{
+	color: #666;
+}
