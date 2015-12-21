@@ -62,8 +62,14 @@ class Visitors_Model
 				'country' => $host['host_country'],
 				'city' => $host['host_city'],
 			);
-			$row['http_referer'] = str_replace(array("=", "%", ",", "."), array(" = ", " % ", ", ", ". "), $row['http_referer']);
-			$row['request_uri'] = str_replace(array("=", "%", ",", "."), array(" = ", " % ", ", ", ". "), $row['request_uri']);
+			$row['http_referer'] = array(
+				'original' => $row['http_referer'],
+				'converted' => str_replace(array("?", "=", "%", ",", "."), array(" ? ", " = ", " % ", ", ", ". "), $row['http_referer']),
+			);
+			$row['request_uri'] = array(
+				'original' => $row['request_uri'],
+				'converted' => str_replace(array("?", "=", "%", ",", "."), array(" ? ", " = ", " % ", ", ", ". "), $row['request_uri']),
+			);
 			$this->row_item = $row;
 			mysql_free_result($result);
 		}
@@ -97,8 +103,8 @@ class Visitors_Model
 					'country' => $host['host_country'],
 					'city' => $host['host_city'],
 				);
-				$row['http_referer'] = str_replace(array("=", "%", ",", "."), array(" = ", " % ", ", ", ". "), $row['http_referer']);
-				$row['request_uri'] = str_replace(array("=", "%", ",", "."), array(" = ", " % ", ", ", ". "), $row['request_uri']);
+				$row['http_referer'] = str_replace(array("?", "=", "%", ",", "."), array(" ? ", " = ", " % ", ", ", ". "), $row['http_referer']);
+				$row['request_uri'] = str_replace(array("?", "=", "%", ",", "."), array(" ? ", " = ", " % ", ", ", ". "), $row['request_uri']);
 				$this->rows_list[] = $row;
 			} 
 			mysql_free_result($result);

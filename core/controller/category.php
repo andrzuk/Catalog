@@ -50,7 +50,7 @@ if ($record_object) // kategoria istnieje
 		// wyświetla zawartość strony:
 		$site_content = $view_object->ShowPage($record_object, $data_import);
 
-		if (empty($site_content)) // brak strony powiązanej z kategorią
+		if (empty($record_object['contents'])) // brak strony powiązanej z kategorią
 		{
 			$site_dialog = array(
 				'ERROR',

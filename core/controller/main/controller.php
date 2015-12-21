@@ -114,6 +114,7 @@ class PageController extends Controller
 	private $menu;
 	private $title;
 	private $content;
+	private $options;
 	private $user;
 
 	public function init($links, $path, $menu)
@@ -125,10 +126,11 @@ class PageController extends Controller
 		parent::load_info();
 	}
 
-	public function set_content($title, $content)
+	public function set_content($title, $content, $options)
 	{
 		$this->title = $title;
 		$this->content = $content;
+		$this->options = $options;
 	}
 	
 	public function set_user($user)
@@ -216,6 +218,28 @@ class PageController extends Controller
 	public function get_content()
 	{
 		$output = NULL;
+		
+		$this->title .= '<span class="PageSignature">';
+		
+		foreach ($this->options as $key => $val)
+		{
+			if (is_array($val))
+			{
+				foreach ($val as $k => $v)
+				{
+					if ($k == 'address') $address = $v;
+					if ($k == 'caption') $caption = $v;
+					if ($k == 'icon') $icon = $v;
+				}				
+				$this->title .= '<span class="PageAction">';
+				$this->title .= '<a href="'.$address.'"><img src="'.$icon.'" class="IconSignature" />'.$caption.'</a>';
+				$this->title .= '</span>';
+				
+				if ($caption == 'Zamknij') break;
+			}
+		}
+		
+		$this->title .= '</span>';
 		
 		$output .= '<div class="WindowHeader">';
 		$output .= $this->title;

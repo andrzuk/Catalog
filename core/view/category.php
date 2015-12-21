@@ -40,18 +40,18 @@ class Category_View
 			$site_content .= '<bgsound src="gallery/sounds/'.$sound_id.'" />';
 		}
 		
-		$site_content .= '<p style="text-align: justify;">';
-		
 		if (is_array($row))
 		{
+			$site_content .= '<p style="text-align: justify;">';
+		
 			foreach ($row as $key => $value)
 			{
 				if ($key == 'contents') $site_content .= $value;
 				if ($key == 'modified') $site_modified .= $value;
 			}
+			$site_content .= '</p>';
 		}
 		
-		$site_content .= '</p>';
 		/*
 		$site_content .= '<p class="PageSignature">';
 		$site_content .= 'Modyfikacja: ' . $site_modified . ' Autor: ' . $author_login;
